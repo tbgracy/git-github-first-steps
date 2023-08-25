@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$white: rgba(241, 241, 241, 0.884);
+$black: rgb(22, 22, 22);
+
+body {
+    text-align: center;
+    background-color: $black;
+    padding: 1rem;
+
+    h1,
+    h3,
+    p {
+        color: $white;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-weight: 2rem;
+        margin: 1rem;
+    }
+
+    #message-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .message-item {
+            border: 1px solid $white;
+            padding: 1rem 2rem;
+            border-radius: 20px;
+        }
+    }
+}
